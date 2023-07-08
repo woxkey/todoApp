@@ -1,17 +1,20 @@
 <template>
-  <div class="todos">
+  <v-container>
     <h1>This is an todo page</h1>
-    <Todos />
-  </div>
+    <TodoList />
+
+
+  </v-container>
 </template>
 
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator'
-import Todos from '../components/Todos.vue'
+import TodoList from '../components/TodoList.vue'
+
 
 @Component({
   components: {
-    Todos
+    TodoList
   }
 })
 export default class TodosView extends Vue {}
